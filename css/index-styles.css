@@ -1,0 +1,94 @@
+/* 
+
+--Font Colors--
+Main Color - #2E2F42
+Secondary Color - #434455
+Light Colors - 
+#FFFFFF
+#E7E9FC
+Blue color - #4D5AE5
+
+--Background colors-- 
+Main Color - #FFFFFF
+Secondary color -#2E2F42
+Section ligth color - #F4F4FD
+
+Botton dark blue color - #404BBF
+Bottom light Blue color - #E5E5E5
+
+
+--Font Size-- 
+Logo -18px 
+Main size - 20px
+Secondary - 16px
+
+*/
+
+:root {
+  /*--Font Colors--*/
+  --main-font-color: #2e2f42;
+  --secondary-font-color: #434455;
+  --light-font-color: #ffffff;
+  --blue-color: #4d5ae5;
+
+  /*--background-colors-- */
+  --main-background-color: #ffffff;
+  --secondary-background-color: #2e2f42;
+  --ligth-background-color: #f4f4fd;
+
+  --button-background-color: #404bbf;
+  --button-light-blue-color: #e5e5e5;
+  --border-color: #e7e9fc;
+
+  --cta-background-color: #4d5ae5;
+}
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Hero section */
+
+.hero {
+  background-color: var(--secondary-background-color);
+}
+.hero__title {
+  color: var(--light-font-color);
+  font-size: 56px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+.hero__cta {
+  padding: 16px 32px;
+  color: var(--light-font-color);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background-color: var(--cta-background-color);
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+/* Domains */
+
+.domains-item__picture {
+  width: 360px;
+  height: 300px;
+  border: 1px solid var(--border-color);
+}
+
+/* Team section*/
+
+.team__list {
+}
+.team__member {
+}
+.team-member__picture {
+  width: 264px;
+  height: 260px;
+}
