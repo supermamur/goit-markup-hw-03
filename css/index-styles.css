@@ -57,6 +57,7 @@ html {
 .hero {
   background-color: var(--secondary-background-color);
   text-align: center;
+  padding: 188px 0;
 }
 .hero__title {
   margin-top: 0;
@@ -78,15 +79,17 @@ html {
 }
 
 /* Features section*/
-.features {
-  padding: 120px 0;
+
+.features__list {
+  display: flex;
+}
+.features__item:not(:last-child) {
+  margin-right: 24px;
 }
 .domains {
   padding-bottom: 120px;
 }
-.team {
-  padding: 120px 0;
-}
+
 /* Domains */
 
 .domains-item__picture {
@@ -94,15 +97,23 @@ html {
   height: 300px;
   border: 1px solid var(--border-color);
 }
-
+.domains__list {
+  display: flex;
+}
+.domains__item:not(:last-child) {
+  margin-right: 24px;
+}
 /* Team section*/
 
 .team__list {
+  display: flex;
+  column-gap: 24px;
   text-align: center;
 }
 .team__member {
+  flex-basis: calc((100% - 72px) / 4);
+  padding-bottom: 32px;
 }
 .team-member__picture {
-  width: 264px;
-  height: 260px;
+  margin-bottom: 32px;
 }
