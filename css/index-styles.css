@@ -56,8 +56,11 @@ html {
 
 .hero {
   background-color: var(--secondary-background-color);
+  text-align: center;
 }
 .hero__title {
+  margin-top: 0;
+  margin-bottom: 48px;
   color: var(--light-font-color);
   font-size: 56px;
   line-height: 1.1;
@@ -74,6 +77,16 @@ html {
   border-radius: 4px;
 }
 
+/* Features section*/
+.features {
+  padding: 120px 0;
+}
+.domains {
+  padding-bottom: 120px;
+}
+.team {
+  padding: 120px 0;
+}
 /* Domains */
 
 .domains-item__picture {
@@ -85,6 +98,7 @@ html {
 /* Team section*/
 
 .team__list {
+  text-align: center;
 }
 .team__member {
 }
