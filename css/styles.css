@@ -60,11 +60,7 @@ body {
   font-family: "Roboto", "sans-serif";
   font-size: 16px;
 }
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+
 /* Common styling*/
 .section {
   padding: 120px 0;
@@ -109,7 +105,11 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /* .section__photo {
   margin-bottom: 32px;
 } */
@@ -142,10 +142,6 @@ img {
 
 /* ====Header====== */
 
-.header {
-  font-size: 16px;
-  line-height: 1.5;
-}
 .main-nav {
   display: flex;
   align-items: center;
@@ -212,6 +208,7 @@ img {
 }
 
 .footer__logo {
+  display: inline-block;
   color: var(--light-font-color);
   margin-bottom: 16px;
 }

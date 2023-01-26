@@ -60,8 +60,8 @@ html {
   padding: 188px 0;
 }
 .hero__title {
-  margin-top: 0;
-  margin-bottom: 48px;
+  margin: 0 auto 48px auto;
+  width: 498px;
   color: var(--light-font-color);
   font-size: 56px;
   line-height: 1.1;
@@ -82,10 +82,13 @@ html {
 
 .features__list {
   display: flex;
+  column-gap: 24px;
 }
-.features__item:not(:last-child) {
-  margin-right: 24px;
+
+.features__item {
+  flex-basis: calc((100% - 3 * 24px) / 4);
 }
+
 .domains {
   padding-bottom: 120px;
 }
@@ -104,7 +107,9 @@ html {
   margin-right: 24px;
 }
 /* Team section*/
-
+.team {
+  background-color: var(--ligth-background-color);
+}
 .team__list {
   display: flex;
   column-gap: 24px;
@@ -113,6 +118,11 @@ html {
 .team__member {
   flex-basis: calc((100% - 72px) / 4);
   padding-bottom: 32px;
+  background-color: var(--main-background-color);
+  border-radius: 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16);
+  overflow: hidden;
 }
 .team-member__picture {
   margin-bottom: 32px;
